@@ -1,0 +1,6 @@
+{
+  "name": "AutoRTA",
+  "description": "Анализатор спектра RTA для настройки автозвука с внешним USB-микрофоном, целевыми кривыми и генератором сигналов",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">AutoRTA</string>
+
+    <!-- Navigation -->
+    <string name="nav_rta">RTA</string>
+    <string name="nav_eq">Мастер</string>
+    <string name="nav_generator">Генератор</string>
+    <string name="nav_setup">Микрофон</string>
+
+    <!-- Permissions -->
+    <string name="permission_mic_title">Доступ к микрофону</string>
+    <string name="permission_mic_rationale">Для анализа АЧХ салона в реальном времени и работы с внешним USB/TRRS RTA-микрофоном требуется доступ к аудиовходу.</string>
+    <string name="permission_mic_grant_btn">Разрешить микрофон</string>
+    <string name="permission_mic_denied_hint">Доступ отклонён. Включите разрешение «Микрофон» в системных настройках приложения.</string>
+
+    <!-- RTA Analyzer -->
+    <string name="rta_start">Старт</string>
+    <string name="rta_pause">Пауза</string>
+    <string name="rta_reset_peaks">Сброс</string>
+    <string name="rta_save_snapshot">Замер</string>
+    <string name="rta_pink_quick">Шум</string>
+    <string name="rta_peak_label">ПИК</string>
+    <string name="rta_clip_warning">CLIP</string>
+    <string name="rta_target_label">Целевая кривая</string>
+    <string name="rta_overlay_active">Наложен:</string>
+    <string name="rta_clear_overlay">Скрыть наложение</string>
+    <string name="rta_touch_hint">Коснитесь графика для замера частоты</string>
+
+    <!-- Snapshot Dialog -->
+    <string name="snapshot_dialog_title">Сохранить замер АЧХ</string>
+    <string name="snapshot_name_label">Название замера</string>
+    <string name="snapshot_name_placeholder">Напр. Фронт L + Саб</string>
+    <string name="snapshot_channel_label">Канал / Зона</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_delete">Удалить</string>
+
+    <!-- DSP EQ & Time Alignment -->
+    <string name="eq_screen_title">Мастер настройки</string>
+    <string name="eq_tab_bands">Рекомендации АЧХ (31)</string>
+    <string name="eq_tab_delays">Расчёт задержек (TA)</string>
+    <string name="eq_match_score">Соответствие</string>
+    <string name="eq_rms_error">Отклонение</string>
+    <string name="eq_target_offset">Уровень целевой кривой</string>
+    <string name="eq_auto_align">Авто-уровень</string>
+    <string name="eq_sort_priority">Сначала проблемные</string>
+    <string name="eq_sort_freq">По частоте</string>
+    <string name="eq_no_signal_hint">Запустите RTA-анализатор и включите розовый шум, чтобы получить рекомендации по коррекции АЧХ.</string>
+    <string name="ta_title">Рекомендации по задержкам (TA)</string>
+    <string name="ta_subtitle">Укажите расстояние от каждого динамика до позиции водителя — приложение рассчитает рекомендуемые значения задержек в мс для ввода в процессор или магнитолу.</string>
+    <string name="ta_temp_label">Температура в салоне</string>
+
+    <!-- Signal Generator -->
+    <string name="gen_screen_title">Генератор тестовых сигналов</string>
+    <string name="gen_play">Включить сигнал</string>
+    <string name="gen_stop">Остановить сигнал</string>
+    <string name="gen_level_label">Уровень выхода</string>
+    <string name="gen_level_warning">Высокий уровень! Берегите ВЧ-динамики.</string>
+    <string name="gen_channel_label">Маршрутизация каналов</string>
+    <string name="gen_channel_lr">L + R</string>
+    <string name="gen_channel_left">Левый (L)</string>
+    <string name="gen_channel_right">Правый (R)</string>
+    <string name="gen_freq_label">Частота синуса</string>
+
+    <!-- Mic & Calibration Setup -->
+    <string name="setup_screen_title">Микрофон и замеры</string>
+    <string name="setup_inputs_title">Аудиовход (RTA микрофон)</string>
+    <string name="setup_refresh_devices">Обновить список</string>
+    <string name="setup_external_connected">Внешний RTA подключён</string>
+    <string name="setup_builtin_fallback">Встроенный микрофон</string>
+    <string name="setup_usb_hint">Подключите внешний USB RTA-микрофон (UMIK-1, USB-карта + ECM8000) через OTG-адаптер или 3.5 мм TRRS (Dayton iMM-6).</string>
+    <string name="setup_cal_title">Калибровка микрофона (.cal / .txt)</string>
+    <string name="setup_cal_import">Импорт файла .cal</string>
+    <string name="setup_cal_none">Без файла калибровки (0.0 дБ)</string>
+    <string name="setup_spl_offset_label">Ручная коррекция SPL (калибратор 94 дБ)</string>
+    <string name="setup_snapshots_title">Сохранённые замеры АЧХ</string>
+    <string name="setup_snapshots_empty">Нет сохранённых замеров. Сделайте снимок на вкладке RTA, чтобы сравнивать АЧХ «до и после» настройки.</string>
+    <string name="setup_overlay_btn">Наложить</string>
+    <string name="setup_overlay_active_btn">Наложен</string>
+
+    <!-- Target Curve Overlay & CSV Import -->
+    <string name="target_manager_title">Целевые кривые (Target Curve)</string>
+    <string name="target_overlay_toggle">Показать целевую кривую на RTA</string>
+    <string name="target_import_csv_btn">Импорт CSV (.csv / .txt)</string>
+    <string name="target_paste_csv_btn">Вставить CSV</string>
+    <string name="target_tolerance_label">Коридор допуска</string>
+    <string name="target_custom_section">Пользовательские CSV-кривые</string>
+    <string name="target_builtin_section">Встроенные пресеты</string>
+
+    <!-- Snapshot PNG & CSV Export -->
+    <string name="export_png_btn">Экспорт PNG</string>
+    <string name="export_csv_btn">Экспорт CSV</string>
+    <string name="export_section_hint">Также можно сохранить текущий график на устройство:</string>
+
+    <!-- AI Recommendation Engine -->
+    <string name="eq_tab_ai">AI-инструктор</string>
+    <string name="ai_advisor_title">AI-рекомендации по эквалайзеру ГУ</string>
+    <string name="ai_firebase_notice_title">Демо-режим AI (требуется Firebase)</string>
+    <string name="ai_firebase_notice_body">Полный AI-анализ Gemini требует подключения Firebase AI Logic. Сейчас возвращаются демонстрационные пошаговые рекомендации на базе локального шаблона.</string>
+    <string name="ai_hu_eq_selector_label">Количество полос эквалайзера вашей магнитолы / DSP:</string>
+    <string name="ai_analyze_live_btn">Проанализировать текущую АЧХ</string>
+    <string name="ai_analyze_sample_btn">Показать пример пошаговой настройки</string>
+    <string name="ai_analyze_snapshot_label">Или разобрать сохранённый замер:</string>
+    <string name="ai_idle_title">Готово к разбору АЧХ</string>
+    <string name="ai_idle_subtitle">Выберите число полос эквалайзера вашей магнитолы и нажмите кнопку выше — приложение составит пошаговый план коррекции под загруженную целевую кривую.</string>
+    <string name="ai_loading_message">Анализируем АЧХ относительно целевой кривой…</string>
+    <string name="ai_error_title">Не удалось сформировать рекомендации</string>
+    <string name="ai_retry_btn">Повторить</string>
+    <string name="ai_placeholder_badge">Пример ответа AI • Демо</string>
+    <string name="ai_priority_issues_title">Ключевые отклонения</string>
+    <string name="ai_no_steps_needed">Все полосы выбранного эквалайзера ГУ находятся в пределах заданного допуска. Дополнительная коррекция не требуется.</string>
+    <string name="ai_crossover_tips_title">Проверки магнитолы, кроссовера и уровней</string>
+
+    <!-- Tuning Wizard ("Мастер настройки") -->
+    <string name="wizard_tab_label">Мастер</string>
+    <string name="wizard_way_count_title">Полосность фронтальной акустики</string>
+    <string name="wizard_topology_title">Схема подключения фронта</string>
+    <string name="wizard_subwoofer_title">Наличие сабвуфера</string>
+    <string name="wizard_next_to_dsp">Далее: Срезы DSP</string>
+    <string name="wizard_dsp_hint_title">Укажите текущие срезы на вашем DSP / ГУ</string>
+    <string name="wizard_dsp_hint_body">Укажите ФВЧ/ФНЧ, крутизну и тип фильтров, выставленные на вашем процессоре или магнитоле — мастер учтёт рабочие полосы каждого динамика.</string>
+    <string name="wizard_next_to_measure">Далее: Замер динамиков</string>
+    <string name="wizard_xover_diag_title">Диагностика срезов DSP и стыков</string>
+    <string name="wizard_level_match_title">Баланс уровней и гейнов каналов</string>
+    <string name="wizard_per_speaker_eq_title">Точечный EQ в рабочей полосе каждого динамика</string>
+</resources>
